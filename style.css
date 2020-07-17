@@ -32,6 +32,7 @@ body {
 
 .typewriter h1 {
     color: #fff;
+    font-size: 2em;
     font-family: monospace;
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
@@ -75,6 +76,7 @@ body {
 .content {
     /* 20% Hero + 6% footer */
     height: 74%;
+    width: 100%;
     background-color: #303030;
 }
 
@@ -184,4 +186,29 @@ body {
 .footer a {
     text-decoration: none;
     color: white;
+}
+
+@media only screen and (min-width: 800px) {
+    .content {
+        display: inline-flex;
+    }
+
+    .content .container {
+        width: calc(100% / 3);
+        height: 100%;
+    }
+
+    .container p {
+        max-width: 70%;
+    }
+
+    .container span {
+        max-width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1245px) {
+    * {
+        font-size: 20px;
+    }
 }
